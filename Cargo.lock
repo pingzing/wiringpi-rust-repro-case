@@ -1,0 +1,23 @@
+[[package]]
+name = "libc"
+version = "0.2.36"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "wiringpi"
+version = "0.2.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "libc 0.2.36 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "wiringpi-repro-case"
+version = "0.1.0"
+dependencies = [
+ "wiringpi 0.2.2 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[metadata]
+"checksum libc 0.2.36 (registry+https://github.com/rust-lang/crates.io-index)" = "1e5d97d6708edaa407429faa671b942dc0f2727222fb6b6539bf1db936e4b121"
+"checksum wiringpi 0.2.2 (registry+https://github.com/rust-lang/crates.io-index)" = "84932967e9167060d8fcd93f03b9e8356d30d13df5cbaa9ba9d61e3e5b30045f"
