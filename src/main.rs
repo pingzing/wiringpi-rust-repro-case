@@ -10,6 +10,7 @@ fn main() {
 
     for i in 0..100 {
         pin_4.pwm_write(i);
+        thread::sleep_ms(100);
     }
     
     thread::sleep_ms(1000);
