@@ -19,7 +19,7 @@ fn main() {
         pins[2].pwm_write(0);
         for i in 0..100 {
             pin.pwm_write(i);
-            thread::sleep_ms(100);        
+            thread::sleep_ms(10);        
         }
     }
 
@@ -28,8 +28,12 @@ fn main() {
         for pin in &pins {
             pin.pwm_write(i);
         }        
-        thread::sleep_ms(100);
+        thread::sleep_ms(10);
     }
     
     thread::sleep_ms(1000);
+
+    for pin in &pins {
+        pin.pwm_write(0);
+    }
 }
