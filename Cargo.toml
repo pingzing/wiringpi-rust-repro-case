@@ -4,4 +4,4 @@ version = "0.1.0"
 authors = ["Neil McAlister <neil.mcalister@futurice.com>"]
 
 [dependencies]
-wiringpi = "0.2"
+wiringpi = {git = "https://github.com/yuhe00/rust-wiringpi/", branch = "fix-build" }
