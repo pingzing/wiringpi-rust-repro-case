@@ -1,4 +1,5 @@
 use std::env;
+use std::thread;
 
 extern crate wiringpi;
 
@@ -12,4 +13,5 @@ fn main() {
 
     let pin_4 = pi.soft_pwm_pin(4);
     pin_4.pwm_write(*value);
+    thread::sleep_ms(1000);
 }
