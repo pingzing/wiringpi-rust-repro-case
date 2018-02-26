@@ -29,11 +29,11 @@ fn main() {
             pin.pwm_write(i);
         }        
         thread::sleep_ms(10);
-    }
-    
-    thread::sleep_ms(1000);
+    }        
 
     for pin in &pins {
         pin.pwm_write(0);
     }
+
+    thread::sleep_ms(1000);
 }
